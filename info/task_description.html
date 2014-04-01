@@ -1,17 +1,27 @@
 <p>
-    <i>Sudoku is a logic-based combinatorial number-placement puzzle. The objective is to fill a 9×9 grid with digits so
-        that each column, each row and each of the nine 3×3 sub-grids that compose the grid contains all of the digits
-        from 1 to 9. The puzzle setter provides a partially completed grid, which typically has a unique solution. </i>
+    Sudoku is a logic-based number-placement puzzle.
+    The objective is to fill a 9×9 grid with digits so that each column,
+    each row and each 3×3 sub-grid contains all of the digits from 1 to 9.
+    The puzzle creator provides a partially completed grid, which typically has a unique solution.
+
 </p>
+
+
+<p>
+    For more information about this game, you should report to <a href="http://www.sudoku.name/rules/">this site</a>.
+</p>
+
 
 <p>
     For example, the following grid
 </p>
 
 <p style="text-align: center;" class="for_info_only">
-    <img class="" title="initial_grid" src="{{MEDIA}}sudoku_init.png" alt="initial_grid" width="180px" hspace="200px" style="vertical-align: middle;"/>
+    <img class="" title="initial_grid" src="{{MEDIA}}sudoku_init.png" alt="initial_grid" width="180px" hspace="200px"
+         style="vertical-align: middle;"/>
     gives the result:
-    <img class="" title="result_grid" src="{{MEDIA}}sudoku_result.png" alt="result_grid" width="180px" hspace="200px" style="vertical-align: middle;"/>
+    <img class="" title="result_grid" src="{{MEDIA}}sudoku_result.png" alt="result_grid" width="180px" hspace="200px"
+         style="vertical-align: middle;"/>
 </p>
 <p class="for_editor_only" style="text-align: left;">
     <img class="" title="initial_grid" src="{{MEDIA}}sudoku_init.png" alt="initial_grid" width="180px"/>
@@ -19,15 +29,18 @@
     <img class="" title="result_grid" src="{{MEDIA}}sudoku_result.png" alt="result_grid" width="180px"/>
 </p>
 
-
 <p>
-    <strong>Input: </strong> The initial 9x9 grid composed by integers. A zero value means that the value hasn't been set.
+    A puzzle is represented as a list of lists with digits.
+    A zero value means that the value hasn't been set.
 </p>
 
 <p>
-    <strong>Output: </strong> Return the result of the sudoku (9x9 grid).
+    <strong>Input: </strong> The initial 9x9 grid composed by integers as a list of lists.
 </p>
 
+<p>
+    <strong>Output: </strong> The result of the sudoku as a list of lists.
+</p>
 
 
 <div class="for_info_only">
@@ -55,4 +68,18 @@
     </pre>
 </div>
 
-<p> For more information about this game, you should report to <a href="http://www.sudoku.name/rules/">this site</a>. </p>
+
+<p>
+    <strong>How it is used:</strong>
+    This is a classic constraint satisfaction problem.
+    CSPs are mathematical problems defined as a set of objects whose state must satisfy a number of constraints or limitations.
+    CSPs are the subject of intense research in both artificial intelligence and operations research, since the regularity in their formulation provides a common basis to analyze and solve problems of many unrelated families.
+    <br>
+    And of course now you can use this code to help your gramma solve all of the puzzles.
+</p>
+
+<p>
+    <strong>Precondition:</strong> Each test case has only one unique solution.<br>
+    &forall; x ∈ puzzle : 0 &le; x < 10<br>
+
+</p>
